@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Merriweather&family=Montserrat&family=Sacramento&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+nav {
+    background-color: palevioletred;
+    color: white;
+    height: 62px;
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+    padding: 0 7px;
+    display: flex;
+    align-items: center;
+}
+
+.gameContainer {
+    margin-top: 23px ;
+
+    display: flex;
+    justify-content: center;
+}
+
+.gameSide {
+    display: grid;
+    grid-template-columns: repeat(3, 20vh);
+    grid-template-rows: repeat(3, 20vh);
+    font-family: 'Kanit', sans-serif;
+    margin: auto 76px;
+    /* position: relative; */
+}
+.line{
+    background-color: black;
+    height: 3px;
+    width: 30vh;
+    /* position: absolute; */
+    /* top:14px; */
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: rgb(231, 206, 255);
+}
+div img {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.info {
+    font-size: 28px;
+
+    /* margin: 0 150px;
+    padding: 21px 0px; */
+    width: 100%;
+}
+
+.infoSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: rgb(212, 175, 246);
+    color: white;
+    margin: 7px 34px;
+    padding: 4px 8px;
+    border-radius: 7px;
+}
+
+
+
+
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+.center{
+    text-align: center;
+}
+
+.font {
+    font-family: 'Kanit', sans-serif;
+
+}
+@media screen and (max-width:1075px) {
+    /* CSS Rules to be applies*/
+
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+    .gameSide {
+        display: grid;
+        grid-template-columns: repeat(3, 15vh);
+        grid-template-rows: repeat(3, 15vh);
+        font-family: 'Kanit', sans-serif;
+        margin: auto 76px;
+    }
+
+}
+@media screen and (max-width:432px) {
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+    .gameSide {
+        display: grid;
+        grid-template-columns: repeat(3, 10vh);
+        grid-template-rows: repeat(3, 10vh);
+        font-family: 'Kanit', sans-serif;
+        margin: auto 76px;
+    }
+
+}
